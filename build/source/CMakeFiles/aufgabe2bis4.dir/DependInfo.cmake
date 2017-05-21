@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/phil/GitRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/source/aufgabe2bis4.cpp" "/Users/phil/GitRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build/source/CMakeFiles/aufgabe2bis4.dir/aufgabe2bis4.cpp.o"
+  "/home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/source/aufgabe2bis4.cpp" "/home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build/source/CMakeFiles/aufgabe2bis4.dir/aufgabe2bis4.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "Clang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

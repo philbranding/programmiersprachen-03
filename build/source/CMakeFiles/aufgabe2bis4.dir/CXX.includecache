@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/phil/GitRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/source/aufgabe2bis4.cpp
+/home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/source/aufgabe2bis4.cpp
 cstdlib
 -
 vector

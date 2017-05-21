@@ -22,17 +22,18 @@ std::list<unsigned int> mylist(100); // creating a new list called l1 with the s
 
 	std::set<unsigned int> setlist(std::begin(mylist), std::end(mylist));
 	    for (auto& i : setlist){
-        set.insert(i);
-        std::cout<< i <<" ";
+	    	setlist.insert(i);
+	    	std::cout<< i <<" ";
     }
 
 	std::cout <<" There are : " << setlist.size() << "  different numbers in the List" <<std::endl;
 
-	 for(unsigned int missingNumber =0; missingNumber<=set.size();missingNumber++){
-        if(set.find(missingNumber) == set.end()){std::cout<< missingNumber <<" ";
-
-    }
-  }
+//using set to get the missing number 
+	 for(unsigned int missingNumber = 0; missingNumber <= setlist.size(); missingNumber++){
+        if(setlist.find(missingNumber) == setlist.end()){
+        	std::cout<< missingNumber <<" ";
+    		}
+		}
 
 
 	return 0;
