@@ -12,15 +12,27 @@ int main(){
 
 std::list<unsigned int> mylist(100); // creating a new list called l1 with the same size as the v0
 	for (auto& i : mylist){ // an iteration that starts refering to the beginning of the v0 Vector
-		i = std::rand() % 100 + 1; // placing random numbers into the 10 places that we have created v0-v9
+		i = std::rand() % 101; // placing random numbers into the 10 places that we have created v0-v9
 	}
 
 	std::vector<unsigned int> myVector(mylist.size());
-		std::copy(std::begin(mylist), std::end(mylist),std::begin(myVector)); 
+			std::copy(std::begin(mylist), 
+			std::end(mylist),
+			std::begin(myVector)); 
 
 	std::set<unsigned int> setlist(std::begin(mylist), std::end(mylist));
+	    for (auto& i : setlist){
+        set.insert(i);
+        std::cout<< i <<" ";
+    }
+
 	std::cout <<" There are : " << setlist.size() << "  different numbers in the List" <<std::endl;
 
+	 for(unsigned int missingNumber =0; missingNumber<=set.size();missingNumber++){
+        if(set.find(missingNumber) == set.end()){std::cout<< missingNumber <<" ";
+
+    }
+  }
 
 
 	return 0;
