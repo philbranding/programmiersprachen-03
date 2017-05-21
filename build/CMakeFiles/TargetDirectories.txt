@@ -2,4 +2,5 @@
 /Users/phil/GitRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build/CMakeFiles/rebuild_cache.dir
 /Users/phil/GitRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build/source/CMakeFiles/edit_cache.dir
 /Users/phil/GitRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build/source/CMakeFiles/rebuild_cache.dir
+/Users/phil/GitRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build/source/CMakeFiles/aufgabe2bis4.dir
 /Users/phil/GitRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build/source/CMakeFiles/aufgabe1.dir
