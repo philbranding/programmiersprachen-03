@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+source/CMakeFiles/aufgabe1.dir/rule:
+	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe1.dir/rule
+.PHONY : source/CMakeFiles/aufgabe1.dir/rule
+
+# Convenience name for target.
+aufgabe1: source/CMakeFiles/aufgabe1.dir/rule
+
+.PHONY : aufgabe1
+
+# fast build rule for target.
+aufgabe1/fast:
+	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe1.dir/build.make source/CMakeFiles/aufgabe1.dir/build
+.PHONY : aufgabe1/fast
+
+# Convenience name for target.
 source/CMakeFiles/aufgabe2bis4.dir/rule:
 	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe2bis4.dir/rule
 .PHONY : source/CMakeFiles/aufgabe2bis4.dir/rule
@@ -126,19 +141,19 @@ aufgabe2bis4/fast:
 .PHONY : aufgabe2bis4/fast
 
 # Convenience name for target.
-source/CMakeFiles/aufgabe1.dir/rule:
-	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe1.dir/rule
-.PHONY : source/CMakeFiles/aufgabe1.dir/rule
+source/CMakeFiles/aufgabe5.dir/rule:
+	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe5.dir/rule
+.PHONY : source/CMakeFiles/aufgabe5.dir/rule
 
 # Convenience name for target.
-aufgabe1: source/CMakeFiles/aufgabe1.dir/rule
+aufgabe5: source/CMakeFiles/aufgabe5.dir/rule
 
-.PHONY : aufgabe1
+.PHONY : aufgabe5
 
 # fast build rule for target.
-aufgabe1/fast:
-	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe1.dir/build.make source/CMakeFiles/aufgabe1.dir/build
-.PHONY : aufgabe1/fast
+aufgabe5/fast:
+	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/build
+.PHONY : aufgabe5/fast
 
 aufgabe1.o: aufgabe1.cpp.o
 
@@ -194,22 +209,53 @@ aufgabe2bis4.cpp.s:
 	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe2bis4.dir/build.make source/CMakeFiles/aufgabe2bis4.dir/aufgabe2bis4.cpp.s
 .PHONY : aufgabe2bis4.cpp.s
 
+aufgabe5.o: aufgabe5.cpp.o
+
+.PHONY : aufgabe5.o
+
+# target to build an object file
+aufgabe5.cpp.o:
+	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/aufgabe5.cpp.o
+.PHONY : aufgabe5.cpp.o
+
+aufgabe5.i: aufgabe5.cpp.i
+
+.PHONY : aufgabe5.i
+
+# target to preprocess a source file
+aufgabe5.cpp.i:
+	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/aufgabe5.cpp.i
+.PHONY : aufgabe5.cpp.i
+
+aufgabe5.s: aufgabe5.cpp.s
+
+.PHONY : aufgabe5.s
+
+# target to generate assembly for a file
+aufgabe5.cpp.s:
+	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/aufgabe5.cpp.s
+.PHONY : aufgabe5.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... aufgabe2bis4"
 	@echo "... edit_cache"
 	@echo "... aufgabe1"
+	@echo "... aufgabe2bis4"
+	@echo "... aufgabe5"
+	@echo "... rebuild_cache"
 	@echo "... aufgabe1.o"
 	@echo "... aufgabe1.i"
 	@echo "... aufgabe1.s"
 	@echo "... aufgabe2bis4.o"
 	@echo "... aufgabe2bis4.i"
 	@echo "... aufgabe2bis4.s"
+	@echo "... aufgabe5.o"
+	@echo "... aufgabe5.i"
+	@echo "... aufgabe5.s"
 .PHONY : help
 
 

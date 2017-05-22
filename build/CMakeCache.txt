@@ -20,6 +20,12 @@ Aufgabenblatt1_BINARY_DIR:STATIC=/home/unix/LocalRepo/Programmiersprachen/progra
 //Value Computed by CMake
 Aufgabenblatt1_SOURCE_DIR:STATIC=/home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3
 
+//Value Computed by CMake
+Aufgabenblatt3_BINARY_DIR:STATIC=/home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build
+
+//Value Computed by CMake
+Aufgabenblatt3_SOURCE_DIR:STATIC=/home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3
+
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
@@ -120,7 +126,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Aufgabenblatt1
+CMAKE_PROJECT_NAME:STATIC=Aufgabenblatt3
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
