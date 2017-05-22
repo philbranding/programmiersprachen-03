@@ -68,6 +68,36 @@ TEST_CASE("Testing the Addition of two Vectors;", "[vector Addition]") {
 }
 
 
+//Aufgabe 3.10 checking the numbers if they are even 
+bool is_even(int n) { 
+	return (n % 2) == 0;
+}
+
+
+TEST_CASE("Testing the Filter Funktion", "[filter]") {
+
+
+template <typename Function, typename Container>
+  Container filter (Container const& size, Function const& Position) {
+  	Container finalVecNumber;
+
+  	for (auto &vecNumber : size){
+  		if (Position(vecNumber)) {
+  			finalVecNumber.push_back(vecNumber);
+  		}
+  	}
+
+    return finalVecNumber;
+  }
+
+
+
+  std::vector<int> v{1,2,3,4,5,6}; 
+  std::vector<int> alleven = filter(v, is_even);
+
+  REQUIRE(std::all_of(alleven.begin(), alleven.end(), is_even));
+}
+
 int main(int argc, char *argv[]){
   return Catch::Session().run(argc, argv);
 }

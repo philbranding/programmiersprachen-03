@@ -21,14 +21,4 @@ as opposed to sequence containers which are more efficient in accessing elements
 
 
 
-- Speichern der Punkte eines Polygons (Associative Container e.g a vector) The order and Number of the points is important and easy to manage
-
-- Zuordnung von Farbnamen und entsprechenden RGB-Werten (Associative Conatiner e.g Map/Set (there is need to match two data)) fast mapping
-
-- FIFO-Warteschlange von Druckaufträgen (Double linked List/Deque/Forward list) fast to insert or delete at the beginning of the list 
-
-
-
-
-
 
