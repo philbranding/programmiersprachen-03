@@ -44,7 +44,8 @@ std::cout <<"  " <<std::endl;
 std::cout <<"  " <<std::endl; 
 std::cout <<" ------------------------------------------------TEST_CASE Assertion-------------------------------------------" <<std::endl;
 
-REQUIRE(std::all_of(v0.begin(), v0.end(), is_multiple_of_3));
+REQUIRE(std::all_of(v0.begin(), v0.end(), is_multiple_of_3) == true);
+REQUIRE(std::all_of(v0.begin(), v0.end(), isnt_multiple_of_3) == false);
 
 
 }
