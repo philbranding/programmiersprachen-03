@@ -20,6 +20,9 @@ std::list<unsigned int> mylist(100); // creating a new list called l1 with the s
 			std::end(mylist),
 			std::begin(myVector)); 
 
+
+			
+
 //using set to get the different numbers from 1 to 100 
 std::cout <<"  " <<std::endl; 
 std::cout <<" -------------------------------------Aufgabe 3.3 Set-----------------------------------------" <<std::endl; 
@@ -34,6 +37,9 @@ std::cout <<"  " <<std::endl;
 std::cout <<"There are : " << setlist.size() << "  different numbers in the List" <<std::endl;
 std::cout <<"  " <<std::endl;
 
+
+
+
 //using set to get the missing number by checking with a counter
 std::cout <<" ----------------------3.3 Zahlen von 0 bis 100 die nicht in der Liste sind--------------------" <<std::endl;
 
@@ -46,13 +52,23 @@ std::cout <<" ----------------------3.3 Zahlen von 0 bis 100 die nicht in der Li
 		}
 std::cout <<"  " <<std::endl;
 std::cout <<"  " <<std::endl;
-//using set to get the missing number by checking with a counter
+
+
+
+
+//using map to count the number of repeated Number from 1 to 100 in our List using an iterator counter
 std::cout <<" ----------------------3.4 Häufigkeit jeder Zahl nicht in der Liste--------------------" <<std::endl;
 
 std::map<unsigned int, unsigned int>listMap;
+
     for (auto& i : mylist){
         listMap[i]++;
     }
+
+    for (auto& i : listMap){
+        std::cout<< i.first<<" : "<< i.second <<std::endl;
+    } 
+
 
 	return 0;
 }
