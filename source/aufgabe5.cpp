@@ -5,12 +5,12 @@
 #include <iostream>
 
 
-bool isnt_multiple_of_3(int i){
-    return ((i%3)!=0);
+bool isnt_multiple_of_3(int numInt){
+    return ((numInt%3)!=0);
 }
 
-bool is_multiple_of_3(int i){
-    return ((i%3)==0);
+bool is_multiple_of_3(int numInt){
+    return ((numInt%3)==0);
 }
 
 TEST_CASE ("filter alle vielfache von drei", "[erase]")
@@ -21,20 +21,22 @@ std::cout <<"  " <<std::endl;
 std::cout <<" ------------------------------Aufgabe 5 vector with random number 1 to 100----------------------------------" <<std::endl; 
 
 std :: vector <int> v0(100);
-	for (auto& v : v0){
-	v = std::rand()%101;
-	std::cout << v <<" ";
+	for (auto& myVector : v0){
+	myVector = std::rand()%101;
+	std::cout << myVector <<" ";
 }
 
 
 std::cout <<"  " <<std::endl; 
+std::cout <<"  " <<std::endl; 
 std::cout <<" -----------------------------------------Numbers that are Divisible by 3-------------------------------------" <<std::endl;
 
 v0.erase(std::remove_if(v0.begin(), v0.end(), isnt_multiple_of_3), v0.end());
-	for (auto& v : v0){
-	std :: cout << v <<" ";
+	for (auto& myVector : v0){
+	std :: cout << myVector <<" ";
 }
 
+std::cout <<"  " <<std::endl; 
 std::cout <<"  " <<std::endl; 
 std::cout <<" ------------------------------------------------TEST_CASE Assertion-------------------------------------------" <<std::endl;
 
