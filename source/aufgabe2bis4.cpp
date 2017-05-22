@@ -21,7 +21,7 @@ std::list<unsigned int> mylist(100); // creating a new list called l1 with the s
 			std::begin(myVector)); 
 
 
-			
+
 
 //using set to get the different numbers from 1 to 100 
 std::cout <<"  " <<std::endl; 
@@ -66,7 +66,7 @@ std::map<unsigned int, unsigned int>listMap;
     }
 
     for (auto& i : listMap){
-        std::cout<< i.first<<" : "<< i.second <<std::endl;
+        std::cout<< i.first<<" => : "<< i.second <<std::endl;
     } 
 
 
