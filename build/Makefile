@@ -124,6 +124,19 @@ aufgabe1/fast:
 .PHONY : aufgabe1/fast
 
 #=============================================================================
+# Target rules for targets named aufgabe37
+
+# Build rule for target.
+aufgabe37: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 aufgabe37
+.PHONY : aufgabe37
+
+# fast build rule for target.
+aufgabe37/fast:
+	$(MAKE) -f source/CMakeFiles/aufgabe37.dir/build.make source/CMakeFiles/aufgabe37.dir/build
+.PHONY : aufgabe37/fast
+
+#=============================================================================
 # Target rules for targets named aufgabe2bis4
 
 # Build rule for target.
@@ -158,6 +171,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... aufgabe1"
+	@echo "... aufgabe37"
 	@echo "... aufgabe2bis4"
 	@echo "... aufgabe5"
 .PHONY : help

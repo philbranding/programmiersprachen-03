@@ -126,6 +126,21 @@ aufgabe1/fast:
 .PHONY : aufgabe1/fast
 
 # Convenience name for target.
+source/CMakeFiles/aufgabe37.dir/rule:
+	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe37.dir/rule
+.PHONY : source/CMakeFiles/aufgabe37.dir/rule
+
+# Convenience name for target.
+aufgabe37: source/CMakeFiles/aufgabe37.dir/rule
+
+.PHONY : aufgabe37
+
+# fast build rule for target.
+aufgabe37/fast:
+	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe37.dir/build.make source/CMakeFiles/aufgabe37.dir/build
+.PHONY : aufgabe37/fast
+
+# Convenience name for target.
 source/CMakeFiles/aufgabe2bis4.dir/rule:
 	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe2bis4.dir/rule
 .PHONY : source/CMakeFiles/aufgabe2bis4.dir/rule
@@ -209,6 +224,33 @@ aufgabe2bis4.cpp.s:
 	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe2bis4.dir/build.make source/CMakeFiles/aufgabe2bis4.dir/aufgabe2bis4.cpp.s
 .PHONY : aufgabe2bis4.cpp.s
 
+aufgabe37.o: aufgabe37.cpp.o
+
+.PHONY : aufgabe37.o
+
+# target to build an object file
+aufgabe37.cpp.o:
+	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe37.dir/build.make source/CMakeFiles/aufgabe37.dir/aufgabe37.cpp.o
+.PHONY : aufgabe37.cpp.o
+
+aufgabe37.i: aufgabe37.cpp.i
+
+.PHONY : aufgabe37.i
+
+# target to preprocess a source file
+aufgabe37.cpp.i:
+	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe37.dir/build.make source/CMakeFiles/aufgabe37.dir/aufgabe37.cpp.i
+.PHONY : aufgabe37.cpp.i
+
+aufgabe37.s: aufgabe37.cpp.s
+
+.PHONY : aufgabe37.s
+
+# target to generate assembly for a file
+aufgabe37.cpp.s:
+	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe37.dir/build.make source/CMakeFiles/aufgabe37.dir/aufgabe37.cpp.s
+.PHONY : aufgabe37.cpp.s
+
 aufgabe5.o: aufgabe5.cpp.o
 
 .PHONY : aufgabe5.o
@@ -236,6 +278,33 @@ aufgabe5.cpp.s:
 	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/aufgabe5.cpp.s
 .PHONY : aufgabe5.cpp.s
 
+circle.o: circle.cpp.o
+
+.PHONY : circle.o
+
+# target to build an object file
+circle.cpp.o:
+	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe37.dir/build.make source/CMakeFiles/aufgabe37.dir/circle.cpp.o
+.PHONY : circle.cpp.o
+
+circle.i: circle.cpp.i
+
+.PHONY : circle.i
+
+# target to preprocess a source file
+circle.cpp.i:
+	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe37.dir/build.make source/CMakeFiles/aufgabe37.dir/circle.cpp.i
+.PHONY : circle.cpp.i
+
+circle.s: circle.cpp.s
+
+.PHONY : circle.s
+
+# target to generate assembly for a file
+circle.cpp.s:
+	cd /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe37.dir/build.make source/CMakeFiles/aufgabe37.dir/circle.cpp.s
+.PHONY : circle.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -243,19 +312,26 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
 	@echo "... aufgabe1"
+	@echo "... aufgabe37"
 	@echo "... aufgabe2bis4"
 	@echo "... aufgabe5"
-	@echo "... rebuild_cache"
 	@echo "... aufgabe1.o"
 	@echo "... aufgabe1.i"
 	@echo "... aufgabe1.s"
 	@echo "... aufgabe2bis4.o"
 	@echo "... aufgabe2bis4.i"
 	@echo "... aufgabe2bis4.s"
+	@echo "... aufgabe37.o"
+	@echo "... aufgabe37.i"
+	@echo "... aufgabe37.s"
 	@echo "... aufgabe5.o"
 	@echo "... aufgabe5.i"
 	@echo "... aufgabe5.s"
+	@echo "... circle.o"
+	@echo "... circle.i"
+	@echo "... circle.s"
 .PHONY : help
 
 

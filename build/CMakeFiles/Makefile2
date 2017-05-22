@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-
 
 # Convenience name for "all" pass in the directory.
 source/all: source/CMakeFiles/aufgabe1.dir/all
+source/all: source/CMakeFiles/aufgabe37.dir/all
 source/all: source/CMakeFiles/aufgabe2bis4.dir/all
 source/all: source/CMakeFiles/aufgabe5.dir/all
 
@@ -71,6 +72,7 @@ source/all: source/CMakeFiles/aufgabe5.dir/all
 
 # Convenience name for "clean" pass in the directory.
 source/clean: source/CMakeFiles/aufgabe1.dir/clean
+source/clean: source/CMakeFiles/aufgabe37.dir/clean
 source/clean: source/CMakeFiles/aufgabe2bis4.dir/clean
 source/clean: source/CMakeFiles/aufgabe5.dir/clean
 
@@ -119,6 +121,43 @@ clean: source/CMakeFiles/aufgabe1.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target source/CMakeFiles/aufgabe37.dir
+
+# All Build rule for target.
+source/CMakeFiles/aufgabe37.dir/all:
+	$(MAKE) -f source/CMakeFiles/aufgabe37.dir/build.make source/CMakeFiles/aufgabe37.dir/depend
+	$(MAKE) -f source/CMakeFiles/aufgabe37.dir/build.make source/CMakeFiles/aufgabe37.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build/CMakeFiles --progress-num=5,6,7 "Built target aufgabe37"
+.PHONY : source/CMakeFiles/aufgabe37.dir/all
+
+# Include target in all.
+all: source/CMakeFiles/aufgabe37.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+source/CMakeFiles/aufgabe37.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe37.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build/CMakeFiles 0
+.PHONY : source/CMakeFiles/aufgabe37.dir/rule
+
+# Convenience name for target.
+aufgabe37: source/CMakeFiles/aufgabe37.dir/rule
+
+.PHONY : aufgabe37
+
+# clean rule for target.
+source/CMakeFiles/aufgabe37.dir/clean:
+	$(MAKE) -f source/CMakeFiles/aufgabe37.dir/build.make source/CMakeFiles/aufgabe37.dir/clean
+.PHONY : source/CMakeFiles/aufgabe37.dir/clean
+
+# clean rule for target.
+clean: source/CMakeFiles/aufgabe37.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target source/CMakeFiles/aufgabe2bis4.dir
 
 # All Build rule for target.
@@ -162,7 +201,7 @@ clean: source/CMakeFiles/aufgabe2bis4.dir/clean
 source/CMakeFiles/aufgabe5.dir/all:
 	$(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/depend
 	$(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build/CMakeFiles --progress-num=5,6 "Built target aufgabe5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/unix/LocalRepo/Programmiersprachen/programmiersprachen-aufgabenblatt-3/build/CMakeFiles --progress-num=8,9 "Built target aufgabe5"
 .PHONY : source/CMakeFiles/aufgabe5.dir/all
 
 # Include target in all.
