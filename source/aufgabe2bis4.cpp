@@ -46,7 +46,13 @@ std::cout <<" ----------------------3.3 Zahlen von 0 bis 100 die nicht in der Li
 		}
 std::cout <<"  " <<std::endl;
 std::cout <<"  " <<std::endl;
+//using set to get the missing number by checking with a counter
+std::cout <<" ----------------------3.4 Häufigkeit jeder Zahl nicht in der Liste--------------------" <<std::endl;
 
+std::map<unsigned int, unsigned int>listMap;
+    for (auto& i : mylist){
+        listMap[i]++;
+    }
 
 	return 0;
 }
