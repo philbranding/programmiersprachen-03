@@ -20,20 +20,32 @@ std::list<unsigned int> mylist(100); // creating a new list called l1 with the s
 			std::end(mylist),
 			std::begin(myVector)); 
 
+//using set to get the different numbers from 1 to 100 
+std::cout <<"  " <<std::endl; 
+std::cout <<" -------------------------------------Aufgabe 3.3 Set-----------------------------------------" <<std::endl; 
+
 	std::set<unsigned int> setlist(std::begin(mylist), std::end(mylist));
 	    for (auto& i : setlist){
 	    	setlist.insert(i);
 	    	std::cout<< i <<" ";
     }
 
-	std::cout <<" There are : " << setlist.size() << "  different numbers in the List" <<std::endl;
+std::cout <<"  " <<std::endl;
+std::cout <<"There are : " << setlist.size() << "  different numbers in the List" <<std::endl;
+std::cout <<"  " <<std::endl;
 
-//using set to get the missing number 
+//using set to get the missing number by checking with a counter
+std::cout <<" ----------------------3.3 Zahlen von 0 bis 100 die nicht in der Liste sind--------------------" <<std::endl;
+
+
 	 for(unsigned int missingNumber = 0; missingNumber <= setlist.size(); missingNumber++){
         if(setlist.find(missingNumber) == setlist.end()){
         	std::cout<< missingNumber <<" ";
     		}
+
 		}
+std::cout <<"  " <<std::endl;
+std::cout <<"  " <<std::endl;
 
 
 	return 0;
