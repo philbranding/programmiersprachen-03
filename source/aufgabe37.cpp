@@ -36,9 +36,9 @@ TEST_CASE("comparing after sorting using Lambda", "[Lambda]") {
 
   REQUIRE(std::is_sorted(std::begin(myCircleVector), std::end(myCircleVector)));
 
-  
+//Another Test of the Lambda and Sort but using a user diffined vector
 
-std::vector<int> vec1 {9,8,7,6,5,4,3,2,1,10}; //Testing Lambda sorting a user Defined vec with 10 radius 
+std::vector<int> vec1 {9,8,7,6,5,4,3,2,1,10}; 
 	
 std::sort(std::begin(vec1), //Sorting the myCircleVector 
 std::end(vec1),[](Circle const& Circle1, Circle const& Circle2){ //Using Lambda to compare two radius
@@ -50,7 +50,22 @@ std::end(vec1),[](Circle const& Circle1, Circle const& Circle2){ //Using Lambda 
 
 }
 
+TEST_CASE("Testing the Addition of two Vectors;", "[vector Addition]") {
+ 
+  std::vector<int> v1 {1,2,3,4,5,6,7,8,9}; 
+  std::vector<int> v2 {9,8,7,6,5,4,3,2,1}; 
+  std::vector<int> v3 (9);
 
+  //Using transform and lambda to add v1 to v2 and saving the result in v3
+  std::transform(v1.begin(), v1.end(), v2.begin(), v3.begin(), [] (int v1_Radius, int v2_Radius){ 
+    int sumOfRadius = v1_Radius + v2_Radius;
+      return sumOfRadius; //the final summ of the two radius from v1 and v2 being saved in v3
+    }
+  );
+
+  REQUIRE(std::all_of(v3.begin(), v3.end(), []  (int a) { return a == 10; }));
+
+}
 
 
 int main(int argc, char *argv[]){
