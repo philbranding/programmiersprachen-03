@@ -6,11 +6,15 @@
 
 
 bool isnt_multiple_of_3(int numInt){
-    return ((numInt%3)!=0);
+    if ((numInt%3)!=0){
+    	return true;
+    }
+    
 }
 
 bool is_multiple_of_3(int numInt){
-    return ((numInt%3)==0);
+    if ((numInt%3)==0);
+    return true;
 }
 
 TEST_CASE ("filter alle vielfache von drei", "[erase]")
